@@ -330,9 +330,6 @@ GEM
       nokogiri (>= 1.6.0)
       rails (>= 3.2.14)
       rest-client
-    wx_pay (0.0.3)
-      activesupport (>= 4)
-      rest-client (>= 1.7)
     yard (0.8.7.6)
 
 PLATFORMS
@@ -380,4 +377,3 @@ DEPENDENCIES
   unicorn
   web-console (~> 2.0)
   wechat-rails
-  wx_pay
