@@ -22,7 +22,7 @@ set :rvm_path, '/home/deploy/.rvm/scripts/rvm'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'log']
+set :shared_paths, ['config/database.yml', 'log', 'tmp']
 
 # Optional settings:
 #   set :user, 'foobar'    # Username in the server to SSH to.
@@ -37,7 +37,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use[ruby-2.0.0-p247@default]'
+  invoke :'rvm:use[ruby-2.1.5@default]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
@@ -67,11 +67,9 @@ task :deploy => :environment do
     invoke :'deploy:cleanup'
 
     to :launch do
-      #queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
-      #queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
+      queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
+      queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
 
-      queue "kill -9 `cat #{deploy_to}/#{current_path}/tmp/pids/server.pid`"
-      queue "rails s -d -P #{deploy_to}/#{current_path}/tmp/server.pid"
     end
   end
 end
