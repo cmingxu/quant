@@ -1,0 +1,25 @@
+default: &default
+  appid: "wx71753a63a0e5c2ec"
+  secret: "077ae3a0a4e88b911c85d1c365908d47"
+  token:  "thisistoken"
+  access_token: "/home/ubuntu/wechat_access_token_shui520"
+  js_api_ticket: "/home/ubuntu/wechat_js_api_ticket_shui520"
+
+production:
+  <<: *default
+
+demo:
+  <<: *default
+
+
+staging:
+  <<: *default
+
+development:
+  <<: *default
+  access_token: "/Users/cmingxu/wechat_access_token_shui"
+  vendor_access_token: "/Users/cmingxu/vendor_wechat_access_token_shui"
+  js_api_ticket: "/Users/cmingxu/wechat_js_api_ticket_shui"
+
+test:
+  <<: *default

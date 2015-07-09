@@ -1,0 +1,10 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "bootstrap": "latest",
+    "normalize": "latest",
+    "underscore": "latest",
+    "underscore.string": "latest",
+    "normalize.css": "latest"
+  }
+}

@@ -1,0 +1,71 @@
+:javascript
+  var wechat = {
+    timestamp: '#{@config[:timestamp]}',
+    nonceStr: '#{@config[:noncestr]}',
+    signature: '#{@config[:signature]}'
+  };
+
+.row-fluid.fixed-top.banner
+  = image_tag "logo.png", height: 30
+
+.row.bar.bar-top#product_section
+  = render :partial => "product_section"
+.row.title.text-right
+  %span
+    .head_icon
+    = link_to "不知道喝哪种水?", ""
+.row.bar#address_section
+  = render :partial => "address_section"
+.row.title.text-right.time_notice
+  %span
+    .head_icon
+    下单后半小时棒棒达
+
+.row.footer#place_order_section
+  = render :partial => "place_order_section"
+
+#overlay
+  #product_overlay_container
+    %ul.list-group.product-list-group
+      - @lb_products.each do |p|
+        %li.list-group-item{"data-product-id" => p.id}
+          .product_icon
+            = image_tag((p.icon.try(:thumb).try(:url) || "http://placehold.it/50x50"), :height => 50, :width => 50)
+          .product_name
+            = p.name
+          .product_detail
+            .product_price.text-right
+              %span
+                = p.price
+              元/
+              = p.container_type
+            .product_desc
+              = p.desc
+          .clearfix
+
+  #personal_info_form_container
+    = form_tag 'wechat/change_address', :method => :patch, :remote => true do
+      %ul.list-group.product-list-group
+        %li
+          .input_container
+            = text_field_tag :phone, current_user.phone, :placeholder => "请输入手机号码"
+        %li
+          .input_container
+            = text_field_tag :address, current_user.address, :placeholder => "请输入详细地址"
+        %li
+          .time_notice
+            备注：爱喝水目前开通回龙观社区送水，其它区域暂未开通
+        %li.text-center
+          = submit_tag "确认"
+
+:javascript
+  wconfig = {
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '#{Wechat.config.appid}', // 必填，公众号的唯一标识
+    timestamp: window.wechat.timestamp, // 必填，生成签名的时间戳
+    nonceStr: window.wechat.nonceStr, // 必填，生成签名的随机串
+    signature: window.wechat.signature,// 必填，签名，见附录1
+    jsApiList: ["getLocation", "getNetworkType"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+  };
+  wx.config( wconfig );
+

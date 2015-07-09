@@ -1,0 +1,13 @@
+button:
+  -
+    type: "view"
+    name: "我要订水"
+    url: "http://shui.6luobo.com/wechat"
+  -
+    type: "view"
+    name: "配送状态"
+    url: "http://shui.6luobo.com/wechat/orders"
+  -
+    type: "view"
+    name: "最新活动"
+    url: "http://shui.6luobo.com/wechat/news"

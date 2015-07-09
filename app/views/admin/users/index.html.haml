@@ -1,0 +1,18 @@
+.users.index_page
+  .container
+    .row
+      %ul.list-group.xcm-list-group
+        - @users.each do |u|
+          %li.list-group-item
+            .xcm_item_name_and_desc
+              .xcm_item_name
+                = u.user_wechat.try(:nickname)
+              .xcm_item_desc
+                = u.last_login_at
+
+            .xcm_actions.pull-right
+              %a{:role => "button", :class => "btn btn-default popup", "data-remote-url" => edit_admin_user_path(u) }= "修改"
+
+            .clearfix
+
+
