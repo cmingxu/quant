@@ -62,7 +62,7 @@ task :load_data => :environment do
   class TableName < Bingo; end
 
   $l.info "migrate stocks table "
-  #stock_table
+  stock_table
   his_quote_dayline
 
 
