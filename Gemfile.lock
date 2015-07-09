@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:cmingxu/wx_pay.git
-  revision: 16b97bfa24b151f524980d4a3ff822f1f03a50fa
+  revision: 1c266a5e06698eeb26b29d394b5ed0b0c5315a3f
   specs:
     wx_pay (0.0.4)
       activesupport (>= 3.2)
