@@ -1,4 +1,12 @@
 GIT
+  remote: git@github.com:cmingxu/wx_pay.git
+  revision: 16b97bfa24b151f524980d4a3ff822f1f03a50fa
+  specs:
+    wx_pay (0.0.4)
+      activesupport (>= 3.2)
+      rest-client (>= 1.7)
+
+GIT
   remote: git@github.com:flyerhzm/chinese_pinyin.git
   revision: 03de64b62d4f8f099bf64fd3dbb3e80a7b4d51a5
   specs:
@@ -330,9 +338,6 @@ GEM
       nokogiri (>= 1.6.0)
       rails (>= 3.2.14)
       rest-client
-    wx_pay (0.0.3)
-      activesupport (>= 4)
-      rest-client (>= 1.7)
     yard (0.8.7.6)
 
 PLATFORMS
@@ -380,4 +385,4 @@ DEPENDENCIES
   unicorn
   web-console (~> 2.0)
   wechat-rails
-  wx_pay
+  wx_pay!

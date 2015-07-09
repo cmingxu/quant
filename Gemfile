@@ -86,4 +86,4 @@ gem 'rqrcode_png'
 
 gem "wechat-rails"
 gem "omniauth-wechat-oauth2"
-gem 'wx_pay'
+gem 'wx_pay', git: 'git@github.com:cmingxu/wx_pay.git'
