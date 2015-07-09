@@ -13,6 +13,7 @@
 #  last_login_at      :datetime
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
+#  mobile             :string(255)
 #
 
 class Staff < ActiveRecord::Base

@@ -1,0 +1,131 @@
+# == Schema Information
+#
+# Table name: realmtimes
+#
+#  id               :integer          not null, primary key
+#  happen_at        :datetime
+#  market_id        :integer
+#  mark_code        :string(255)
+#  stock_code       :string(255)
+#  stock_short_name :string(255)
+#  zrsp             :decimal(10, 2)
+#  jrkp             :decimal(10, 2)
+#  zjcj             :decimal(10, 2)
+#  cjsl             :decimal(10, 2)
+#  cjje             :decimal(10, 2)
+#  cjbs             :decimal(10, 2)
+#  zgcj             :decimal(10, 2)
+#  zdcj             :decimal(10, 2)
+#  syl1             :decimal(10, 2)
+#  syl2             :decimal(10, 2)
+#  jsd1             :decimal(10, 2)
+#  jsd2             :decimal(10, 2)
+#  gycc             :decimal(10, 2)
+#  sjw5             :decimal(10, 2)
+#  ssl5             :decimal(10, 2)
+#  sjw4             :decimal(10, 2)
+#  ssl4             :decimal(10, 2)
+#  sjw3             :decimal(10, 2)
+#  ssl3             :decimal(10, 2)
+#  sjw2             :decimal(10, 2)
+#  ssl2             :decimal(10, 2)
+#  sjw1             :decimal(10, 2)
+#  ssl1             :decimal(10, 2)
+#  bjw1             :decimal(10, 2)
+#  bsl1             :decimal(10, 2)
+#  bjw2             :decimal(10, 2)
+#  bsl2             :decimal(10, 2)
+#  bjw3             :decimal(10, 2)
+#  bsl3             :decimal(10, 2)
+#  bjw4             :decimal(10, 2)
+#  bsl4             :decimal(10, 2)
+#  bjw5             :decimal(10, 2)
+#  bsl5             :decimal(10, 2)
+#  cjav             :decimal(10, 2)
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  happen_at: 2015-07-09 13:16:37
+  market_id: 1
+  mark_code: MyString
+  stock_code: MyString
+  stock_short_name: MyString
+  zrsp: 9.99
+  jrkp: 9.99
+  zjcj: 9.99
+  cjsl: 9.99
+  cjje: 9.99
+  cjbs: 9.99
+  zgcj: 9.99
+  zdcj: 9.99
+  syl1: 9.99
+  syl2: 9.99
+  jsd1: 9.99
+  jsd2: 9.99
+  gycc: 9.99
+  sjw5: 9.99
+  ssl5: 9.99
+  sjw4: 9.99
+  ssl4: 9.99
+  sjw3: 9.99
+  ssl3: 9.99
+  sjw2: 9.99
+  ssl2: 9.99
+  sjw1: 9.99
+  ssl1: 9.99
+  bjw1: 9.99
+  bsl1: 9.99
+  bjw2: 9.99
+  bsl2: 9.99
+  bjw3: 9.99
+  bsl3: 9.99
+  bjw4: 9.99
+  bsl4: 9.99
+  bjw5: 9.99
+  bsl5: 9.99
+  cjav: 9.99
+
+two:
+  happen_at: 2015-07-09 13:16:37
+  market_id: 1
+  mark_code: MyString
+  stock_code: MyString
+  stock_short_name: MyString
+  zrsp: 9.99
+  jrkp: 9.99
+  zjcj: 9.99
+  cjsl: 9.99
+  cjje: 9.99
+  cjbs: 9.99
+  zgcj: 9.99
+  zdcj: 9.99
+  syl1: 9.99
+  syl2: 9.99
+  jsd1: 9.99
+  jsd2: 9.99
+  gycc: 9.99
+  sjw5: 9.99
+  ssl5: 9.99
+  sjw4: 9.99
+  ssl4: 9.99
+  sjw3: 9.99
+  ssl3: 9.99
+  sjw2: 9.99
+  ssl2: 9.99
+  sjw1: 9.99
+  ssl1: 9.99
+  bjw1: 9.99
+  bsl1: 9.99
+  bjw2: 9.99
+  bsl2: 9.99
+  bjw3: 9.99
+  bsl3: 9.99
+  bjw4: 9.99
+  bsl4: 9.99
+  bjw5: 9.99
+  bsl5: 9.99
+  cjav: 9.99

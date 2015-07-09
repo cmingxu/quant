@@ -32,11 +32,8 @@ gem 'unicorn'
 gem 'state_machine'
 
 # Use Capistrano for deployment
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-bundler'
-gem 'capistrano-rvm'
 
+gem 'mina'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -87,6 +84,6 @@ gem 'newrelic_rpm'
 gem 'rqrcode_png'
 
 
-gem "wechat-rails", git:"https://github.com/cmingxu/wechat-rails"
+gem "wechat-rails"
 gem "omniauth-wechat-oauth2"
 gem 'wx_pay'

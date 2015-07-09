@@ -1,0 +1,53 @@
+# == Schema Information
+#
+# Table name: curr_quote_minlines
+#
+#  id          :integer          not null, primary key
+#  market_id   :integer
+#  market_name :string(255)
+#  stock_id    :integer
+#  stock_code  :string(255)
+#  kpsj        :datetime
+#  spsj        :datetime
+#  open        :decimal(10, 2)
+#  close       :decimal(10, 2)
+#  high        :decimal(10, 2)
+#  low         :decimal(10, 2)
+#  deal        :decimal(10, 2)
+#  total_price :decimal(10, 2)
+#  happen_at   :datetime
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  market_id: 1
+  market_name: MyString
+  stock_id: 1
+  stock_code: MyString
+  kpsj: 2015-07-09 13:06:48
+  spsj: 2015-07-09 13:06:48
+  open: 9.99
+  close: 9.99
+  high: 9.99
+  low: 9.99
+  deal: 9.99
+  total_price: 9.99
+  happen_at: 2015-07-09 13:06:48
+
+two:
+  market_id: 1
+  market_name: MyString
+  stock_id: 1
+  stock_code: MyString
+  kpsj: 2015-07-09 13:06:48
+  spsj: 2015-07-09 13:06:48
+  open: 9.99
+  close: 9.99
+  high: 9.99
+  low: 9.99
+  deal: 9.99
+  total_price: 9.99
+  happen_at: 2015-07-09 13:06:48

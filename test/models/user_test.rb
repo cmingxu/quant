@@ -17,7 +17,6 @@
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  openid             :string(255)
-#  next_time_free     :boolean
 #
 
 require 'test_helper'
