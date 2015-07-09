@@ -10,14 +10,14 @@ require 'mina/rvm'    # for rvm support. (http://rvm.io)
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, '120.24.177.42'
-set :user, 'root'
-set :deploy_to, '/root/quant'
+set :domain, 'jghtwl.com'
+set :user, 'deploy'
+set :deploy_to, '/home/deploy/quant'
 set :repository, 'git@github.com:cmingxu/quant.git'
 set :branch, 'master'
 
 # For system-wide RVM install.
-set :rvm_path, '/usr/local/rvm/scripts/rvm'
+set :rvm_path, '/home/deploy/.rvm/scripts/rvm'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
@@ -36,7 +36,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-   invoke :'rvm:use[ruby-2.1.5@default]'
+   invoke :'rvm:use[ruby-1.9.3-p448@default]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
