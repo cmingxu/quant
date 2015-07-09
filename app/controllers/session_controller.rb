@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SessionController < ApplicationController
   def login
     if request.post?

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module AdminHelper
   def sidebar_item_helper(text, href, icon, identifier)
     c = @current_active_nav.to_s == identifier.to_s ? "active sidebar_item" : "sidebar_item"

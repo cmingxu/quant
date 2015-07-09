@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateCurrQuoteMinlines < ActiveRecord::Migration
   def change
     create_table :curr_quote_minlines do |t|

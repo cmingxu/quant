@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ShipmentsController < ApplicationController
   before_action :set_shipment, only: [:show, :edit, :update, :destroy]
 

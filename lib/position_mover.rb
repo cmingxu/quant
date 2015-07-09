@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module PositionMover
   def move_higher
     @instance.move_higher

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ApplicationHelper
   def dropdown display, *args, &block
     content_tag :div, :class => "dropdown" do

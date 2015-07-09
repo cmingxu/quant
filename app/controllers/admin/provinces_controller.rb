@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class ProvincesController < Admin::BaseController
   before_action :set_provice, only: [:show, :edit, :update, :destroy]
 

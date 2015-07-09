@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::BranchesController < Admin::BaseController
   before_action :set_branch, only: [:show, :edit, :update, :destroy]
   before_filter do

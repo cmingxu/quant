@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreatePerdeals < ActiveRecord::Migration
   def change
     create_table :perdeals do |t|

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateRealmtimes < ActiveRecord::Migration
   def change
     create_table :realmtimes do |t|

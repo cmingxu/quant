@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::StaffsController < Admin::BaseController
   def index
     @staffs = Staff.page params[:page]

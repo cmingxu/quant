@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::OrdersController < Admin::BaseController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if Rails.env.production?
   $redis = Redis.new port: 6378
   Resque.redis = $redis

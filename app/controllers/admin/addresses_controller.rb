@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddressesController < Admin::BaseController
   before_action :set_address, only: [:show, :edit, :update, :destroy]
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # required
 WxPay.appid = 'wx71753a63a0e5c2ec'
 WxPay.key = '184eac52da804e4542e0b2ef85b2c609'

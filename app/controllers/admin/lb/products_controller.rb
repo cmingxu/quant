@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::Lb::ProductsController < Admin::BaseController
   include PositionMover
   before_filter :find_product, :only => [:show, :edit, :update, :destroy, :move_higher, :move_lower]

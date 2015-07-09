@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::Lb::OrdersController < Admin::BaseController
   def index
     if params[:status]

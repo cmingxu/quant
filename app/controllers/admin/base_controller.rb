@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::BaseController < ApplicationController
   layout "admin"
   skip_before_filter :load_cart

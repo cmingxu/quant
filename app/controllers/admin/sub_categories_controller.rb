@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SubCategoriesController < ApplicationController
   before_action :set_sub_category, only: [:show, :edit, :update, :destroy]
 

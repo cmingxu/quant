@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateWechatUsers < ActiveRecord::Migration
   def change
     create_table :wechat_users do |t|

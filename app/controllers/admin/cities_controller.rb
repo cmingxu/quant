@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CitiesController < Admin::BaseController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
 

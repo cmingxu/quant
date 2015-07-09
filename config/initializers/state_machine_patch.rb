@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'state_machine/version'
 
 unless StateMachine::VERSION == '1.2.0'
