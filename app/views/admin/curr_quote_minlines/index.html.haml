@@ -1,0 +1,38 @@
+.curr_quote_minlines.index_page
+  .container
+    .row
+      %ul.list-group.xcm-list-group
+        - @curr_quote_minlines.each do |u|
+          %li.list-group-item
+            .xcm_item_icon.col-md-2
+              = u.market_name
+            .xcm_item_icon.col-md-2
+              = u.stock_code
+            .xcm_item_icon.col-md-2
+              = u.kpsj
+            .xcm_item_icon.col-md-2
+              = u.spsj
+            .xcm_item_icon.col-md-2
+              = u.open
+              |
+              = u.close
+              |
+              = u.high
+              | 
+              = u.low
+
+            .xcm_item_icon.col-md-2
+              = u.deal
+              |
+              = u.total_price
+
+
+            .xcm_actions.pull-right
+              %a{:role => "button", :class => "btn btn-default popup", "data-remote-url" => edit_admin_curr_quote_minline_path(u) }= "修改"
+
+            .clearfix
+
+
+    = paginate @curr_quote_minlines
+
+

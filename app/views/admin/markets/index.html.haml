@@ -1,0 +1,19 @@
+.markets.index_page
+  .container
+    .row
+      %ul.list-group.xcm-list-group
+        - @markets.each do |u|
+          %li.list-group-item
+            .xcm_item_name_and_desc.col-md-4
+              .xcm_item_name
+                = u.name
+            .xcm_item_icon.col-md-4
+              = u.code
+
+            .xcm_actions.pull-right
+              %a{:role => "button", :class => "btn btn-default popup", "data-remote-url" => edit_admin_user_path(u) }= "修改"
+
+            .clearfix
+
+
+

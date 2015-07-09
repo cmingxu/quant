@@ -21,5 +21,6 @@
 #  updated_at  :datetime         not null
 #
 
+
 class CurrQuoteMinline < ActiveRecord::Base
 end

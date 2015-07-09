@@ -1,4 +1,4 @@
-# -*- encoding : utf-8 -*-
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150709051637) do
+ActiveRecord::Schema.define(version: 20150709144917) do
 
   create_table "curr_quote_minlines", force: :cascade do |t|
     t.integer  "market_id",   limit: 4
@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20150709051637) do
     t.decimal  "close",                   precision: 10, scale: 2
     t.decimal  "high",                    precision: 10, scale: 2
     t.decimal  "low",                     precision: 10, scale: 2
-    t.decimal  "deal",                    precision: 10, scale: 2
-    t.decimal  "total_price",             precision: 10, scale: 2
+    t.decimal  "deal",                    precision: 16, scale: 2
+    t.decimal  "total_price",             precision: 16, scale: 2
     t.datetime "happen_at"
     t.datetime "created_at",                                       null: false
     t.datetime "updated_at",                                       null: false

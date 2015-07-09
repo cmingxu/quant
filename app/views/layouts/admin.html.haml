@@ -15,6 +15,9 @@
       .loading_indicator.hide
         = fa_icon "spinner 4x spin"
       .sidebar{"data-turbolinks-permanent" => true}
+        = sidebar_item_helper("当前分线", admin_curr_quote_minlines_path,  :bank, :users)
+        = sidebar_item_helper("交易号码", admin_stocks_path,  :bank, :users)
+        = sidebar_item_helper("交易市场", admin_markets_path,  :bank, :users)
         = sidebar_item_helper("用户管理", admin_users_path,   :user, :users)
         = sidebar_item_helper("管理员管理", admin_staffs_path,   :user, :users)
 

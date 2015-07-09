@@ -1,5 +1,11 @@
 # -*- encoding : utf-8 -*-
 Rails.application.routes.draw do
+
+
+  namespace :admin do
+  get 'curr_quote_minlines/index'
+  end
+
   ResqueWeb::Engine.eager_load!
 
   require 'resque_web'
@@ -24,6 +30,9 @@ Rails.application.routes.draw do
     get 'settings/index'
     resources :users
     resources :staffs
+    resources :markets
+    resources :stocks
+    resources :curr_quote_minlines
 
     get 'settings' => 'settings#index'
   end

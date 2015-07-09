@@ -1,0 +1,22 @@
+.users.index_page
+  .container
+    .row
+      %ul.list-group.xcm-list-group
+        - @stocks.each do |s|
+          %li.list-group-item
+            .xcm_item_name_and_desc.col-md-4
+              .xcm_item_name
+                = s.code
+            .xcm_item_icon.col-md-4
+              = s.market_name
+              (
+              = s.market_id
+              )
+
+            .xcm_actions.pull-right
+              %a{:role => "button", :class => "btn btn-default popup", "data-remote-url" => edit_admin_stock_path(s) }= "修改"
+
+            .clearfix
+
+
+    = paginate @stocks
